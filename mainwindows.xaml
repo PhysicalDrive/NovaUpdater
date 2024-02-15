@@ -1,0 +1,14 @@
+<Window x:Class="NovaUpdater.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:effects="clr-namespace:System.Windows.Media.Effects;assembly=PresentationCore" xmlns:local="clr-namespace:NovaUpdater" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" AllowsTransparency="True" Title="Nova Updater" Height="311" Width="260" WindowStartupLocation="CenterScreen" WindowStyle="None" BorderThickness="0" ResizeMode="NoResize" Background="{x:Null}" BorderBrush="{x:Null}">
+  <Grid>
+    <Border CornerRadius="6">
+      <Image Source="/season_0.jpg" RenderTransformOrigin="0.5,0.5" Stretch="UniformToFill">
+        <UIElement.Effect>
+          <effects:BlurEffect Radius="10" />
+        </UIElement.Effect>
+      </Image>
+    </Border>
+    <ProgressBar Name="progressBar" IsIndeterminate="True" Style="{StaticResource MaterialDesignCircularProgressBar}" Value="0" Width="120" Height="120" BorderThickness="0,0,0,0" FontSize="0.01" HorizontalAlignment="Center" VerticalAlignment="Center" LargeChange="0" Foreground="#FFFFFFFF" Opacity="0.5" />
+    <TextBlock Name="Progresstxt" Text="Please Wait" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FFFFFFFF" FontSize="14" FontFamily="Microsoft YaHei UI" Opacity=".9" />
+    <TextBlock Name="TitleTxt" Text="Updating Launcher" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="#FFFFFFFF" FontWeight="Black" FontSize="16" FontFamily="Microsoft YaHei UI Light" Margin="0,0,0,37" Loaded="TitleTxt_Loaded" />
+  </Grid>
+</Window>
