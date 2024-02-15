@@ -1,1 +1,14 @@
-
+<Application x:Class="NovaUpdater.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:NovaUpdater" xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml">
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Grey.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Blue.xaml" />
+        <markup:ThemesDictionary xmlns:markup="clr-namespace:Wpf.Ui.Markup;assembly=Wpf.Ui" markup:ThemesDictionary.Theme="Dark" />
+        <markup:ControlsDictionary xmlns:markup="clr-namespace:Wpf.Ui.Markup;assembly=Wpf.Ui" />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>
