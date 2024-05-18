@@ -8,8 +8,6 @@ public class App : Application
 {
 	private bool _contentLoaded;
 
-	[DebuggerNonUserCode]
-	[GeneratedCode("PresentationBuildTasks", "7.0.13.0")]
 	public void InitializeComponent()
 	{
 		if (!_contentLoaded)
@@ -21,9 +19,6 @@ public class App : Application
 		}
 	}
 
-	[STAThread]
-	[DebuggerNonUserCode]
-	[GeneratedCode("PresentationBuildTasks", "7.0.13.0")]
 	public static void Main()
 	{
 		App app = new App();
